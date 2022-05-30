@@ -1,0 +1,19 @@
+footer {
+  background-color: $main;
+  padding: 3rem 0;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: 7rem;
+
+  a {
+    color: $main-bg;
+  }
+
+  .permalinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 3rem;
+  }
+}

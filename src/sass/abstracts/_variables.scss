@@ -1,4 +1,17 @@
-// color
-$main-white: #fff;
+/* colors */
+$white: #fff;
+$main-bg: #1f1f38;
+$sub-bg: #2c2c6c;
+$main: #4db5ff;
+$sub: rgba(77, 181, 255, 0.4);
+$light: rgba(255, 255, 255, 0.6);
 
-$main-bg: #000
+/* Size */
+$container-width-lg: 75%;
+$container-width-md: 86%;
+$container-width-sm: 90%;
+
+$transition: all 0.4s ease;
+
+$tablet-width: 1024px;
+$mobile-width: 600px;

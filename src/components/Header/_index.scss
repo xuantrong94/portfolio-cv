@@ -1,0 +1,62 @@
+header {
+  height: 100vh;
+  padding-top: 5rem;
+  overflow: hidden;
+}
+
+.header {
+  &__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+  }
+
+  &__cta {
+    @include flex(center, center);
+    gap: 1.2rem;
+    margin-top: 2.5rem;
+  }
+
+  &__socials {
+    @include flex(center, center);
+    flex-direction: column;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 13rem;
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 2rem;
+      background-color: $main;
+    }
+  }
+
+  &__me {
+    background-color: $main;
+    width: 22rem;
+    height: 33rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 3rem;
+    overflow: hidden;
+  }
+
+  &__scroll-down {
+    position: absolute;
+    right: -1.5rem;
+    bottom: 15rem;
+    transform: rotate(90deg);
+    font-weight: 200;
+    font-size: 0.9rem;
+  }
+
+  @include mobile {
+    &__scroll-down,
+    &__socials {
+      display: none;
+    }
+  }
+}

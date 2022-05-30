@@ -1,14 +1,14 @@
 @import './abstracts/variables';
+@import './abstracts/mixins';
 
 @import './base/reset';
+@import './base/fonts';
 @import './base/global';
 
+@import '../components/Header';
+@import '../components/Nav';
 @import '../components/About';
 @import '../components/Contact';
 @import '../components/Experience';
-@import '../components/Footer';
-@import '../components/Header';
-@import '../components/Nav';
 @import '../components/Portfolio';
-@import '../components/Services';
-@import '../components/Testimonials';
+@import '../components/Footer';

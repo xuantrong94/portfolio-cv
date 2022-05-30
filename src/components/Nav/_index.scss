@@ -1,0 +1,32 @@
+.nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  padding: 0.7rem 1.7rem;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.5rem;
+  z-index: 2;
+  @include flex(center, center);
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+
+  a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    color: $light;
+    font-size: 1.1rem;
+    display: flex;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &.active {
+      background-color: $main-bg;
+      color: $white;
+    }
+  }
+}

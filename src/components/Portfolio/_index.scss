@@ -1,0 +1,41 @@
+footer {
+  height: 10vh;
+}
+.portfolio {
+  &__container {
+    @include tablet {
+      gap: 1.2rem;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  &__item {
+    background-color: $main-bg;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: $transition;
+    text-align: center;
+
+    &:hover {
+      border-color: $sub;
+      background: transparent;
+    }
+
+    h3 {
+      margin: 1.2rem 0 2rem;
+    }
+  }
+
+  &__img {
+    border-radius: 1.5rem;
+    overflow: hidden;
+  }
+}

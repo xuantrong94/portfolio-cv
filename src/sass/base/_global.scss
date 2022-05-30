@@ -1,4 +1,118 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-    background-color: $main-bg;
-    color: $main-white;
+  font-family: "Poppins", sans-serif;
+  background-color: $main-bg;
+  color: $white;
+  line-height: 1.7;
+  background-color: #40406e;
+}
+
+.container {
+  width: $container-width-lg;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+section {
+  margin-top: 8rem;
+
+  & > h2,
+  & > h5 {
+    text-align: center;
+    color: $light;
+  }
+
+  & > h2 {
+    color: $main;
+    margin-bottom: 3rem;
+  }
+}
+
+.text-light {
+  color: $light;
+}
+
+a {
+  text-decoration: none;
+  color: $main;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: $main;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid $main;
+  transition: $transition;
+
+  &:hover {
+    background-color: $white;
+    color: $main-bg;
+    border-color: transparent;
+  }
+}
+
+.btn-primary {
+  background-color: $main;
+  color: $main-bg;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+//* response
+@include tablet {
+  .container {
+    width: $container-width-md;
+  }
+  section {
+    margin-top: 6rem;
+  }
+}
+
+@include mobile {
+  .container {
+    width: $container-width-sm;
+  }
+  section > h2 {
+    margin-bottom: 2rem;
+  }
 }
